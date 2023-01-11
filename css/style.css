@@ -1,59 +1,91 @@
+@import "reset.css";
+
 .hidden {
   display: none;
 }
 
-.wrap {
-  width: 100%;
-  height: 100vh;
-  /* position: relative; */
+body {
+  position: relative;
+  overflow: hidden;
 }
 
-#img {
-  /* width: 100%; */
+#bgImage {
+  position: absolute;
 }
 
-h2 {
-  font-size: 150px;
+#clock {
+  position: absolute;
+  top: 20%;
   color: #fff;
-  position: fixed;
-  left: 650px;
-  top: 300px;
+  font-size: 120px;
+  width: 100%;
+  text-align: center;
 }
 
 #login-form {
-  position: fixed;
-  left: 650px;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
 }
 
 #login-form input:first-child {
+  border: none;
+  padding: 5px 0px;
+  font-size: 18px;
+  width: 200px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
 }
 
-#login-form input:last-child {
+#login-form input::placeholder {
+  color: #fff;
 }
 
-h1 {
-  font-size: 60px;
-  position: fixed;
-  left: 820px;
-  top: 500px;
+#login-form input:focus {
+  outline: none;
+  color: #fff;
+}
+
+#greeting {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
   color: #fff;
 }
 
 #todo-form {
-  position: fixed;
-  left: 820px;
-  top: 600px;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
 }
 
 #todo-form input {
-  width: 300px;
-  height: 20px;
+  border: none;
+  padding: 5px 0px;
+  font-size: 18px;
+  width: 200px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+#todo-form input::placeholder {
+  color: #fff;
+}
+
+#todo-form input:focus {
+  outline: none;
+  color: #fff;
 }
 
 #todo-list {
-  position: fixed;
-  left: 820px;
-  top: 630px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 #todo-list li {
@@ -61,19 +93,8 @@ h1 {
 }
 
 #quote {
-  /* position: fixed; */
-  /* position: relative; */
-  left: 820px;
-  top: 800px;
-}
-
-#quote span {
-  /* color: #fff; */
-  font-size: 15px;
-}
-
-#quote span:first-child {
-}
-
-#quote span:last-child {
+  position: absolute;
+  left: 1%;
+  top: 3%;
+  color: #fff;
 }
